@@ -35,7 +35,7 @@ body::before {
     left: -10px;
     width: calc(100% + 20px);
     height: calc(100% + 20px);
-    background-image: url('img/fondo.gif'); /* Usamos el GIF que mencionaste antes */
+    background-image: url('fondo.gif'); /* Usamos el GIF que mencionaste antes */
     background-size: cover;
     background-position: center;
     filter: blur(15px) brightness(0.4); /* Más oscuro para resaltar el contenido */
@@ -729,4 +729,5 @@ footer {
     15% { opacity: 1; transform: translateX(-50%) translateY(0); }
     85% { opacity: 1; transform: translateX(-50%) translateY(0); }
     100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+
 }
