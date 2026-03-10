@@ -1,0 +1,22 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow">
+      <!-- Este filtro crea el resplandor morado alrededor de la estrella -->
+      <feDropShadow dx="0" dy="0" stdDeviation="2.5" flood-color="#c084fc" />
+    </filter>
+  </defs>
+
+  <!-- 1. Fondo morado oscuro con bordes redondeados -->
+  <rect width="64" height="64" rx="12" fill="#1e1b4b" />
+
+  <!-- 2. Icono de usuario simple en color blanco para alto contraste -->
+  <g fill="white" transform="translate(0, 2)">
+    <circle cx="32" cy="24" r="9" />
+    <path d="M17 50 C 17 38, 47 38, 47 50 Z" />
+  </g>
+
+  <!-- 3. Estrella de 4 puntas con el efecto de resplandor (glow) -->
+  <g transform="translate(42, 12)">
+    <path d="M 5,0 L 6.5,3.5 L 10,5 L 6.5,6.5 L 5,10 L 3.5,6.5 L 0,5 L 3.5,3.5 Z" fill="white" filter="url(#glow)" />
+  </g>
+</svg>

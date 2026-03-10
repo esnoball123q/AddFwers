@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddFwers</title>
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Nuestro nuevo Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Enlace a nuestro archivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fondo de partículas -->
+    <div id="particles-container"></div>
+
+    <!-- Elementos decorativos de fondo -->
+    <div class="background-decoration">
+        <div class="glow-corner top-left"></div>
+        <div class="glow-corner top-right"></div>
+        <div class="glow-corner bottom-left"></div>
+        <div class="glow-corner bottom-right"></div>
+        <div class="abstract-shape shape-1"></div>
+        <div class="abstract-shape shape-2"></div>
+    </div>
+
+    <!-- 1. Hero Section -->
+    <header class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content reveal">
+                <h1 class="main-title">Haz crecer tu perfil de Roblox</h1>
+                <p class="subtitle">Aumenta la visibilidad de tu perfil y haz que más jugadores descubran tu contenido dentro de la plataforma.</p>
+                
+                <div class="glass-card hero-card">
+                    <h2>Conectar con la comunidad</h2>
+                    <form id="connectForm">
+                        <input type="text" id="usernameInput" placeholder="Ingresa tu usuario de Roblox" required>
+                        <button type="submit" class="glow-button">Continuar</button>
+                    </form>
+                    <p id="status"></p>
+                </div>
+            </div>
+
+            <!-- Panel de Actividad en Vivo -->
+            <div class="activity-wrapper reveal">
+                <div class="glass-card activity-panel">
+                    <div class="activity-header">
+                        <h3><i class="fa-solid fa-circle fa-beat-fade" style="color: #ef4444; font-size: 0.7rem; margin-right: 8px;"></i> Actividad en Vivo</h3>
+                    </div>
+                    <div id="activity-feed" class="activity-feed"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Sección de ventajas -->
+    <section class="features-section">
+        <div class="grid-container">
+            <div class="glass-card feature reveal">
+                <i class="fa-solid fa-bolt feature-icon"></i>
+                <h3>Velocidad</h3>
+                <p>Procesamiento inmediato de solicitudes para tu perfil.</p>
+            </div>
+            <div class="glass-card feature reveal">
+                <i class="fa-solid fa-star feature-icon"></i>
+                <h3>Calidad</h3>
+                <p>Solo necesitas ingresar tu información y el sistema hará el resto automáticamente.</p>
+            </div>
+            <div class="glass-card feature reveal">
+                <i class="fa-solid fa-users feature-icon"></i>
+                <h3>Comunidad</h3>
+                <p>Miles de usuarios participan diariamente dentro de la plataforma.</p>
+            </div>
+            <div class="glass-card feature reveal">
+                <i class="fa-solid fa-lock feature-icon"></i>
+                <h3>Seguridad</h3>
+                <p>Protección total de tu cuenta y datos en todo momento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Estadísticas -->
+    <section class="stats-section">
+        <div class="live-indicator reveal">
+            <span class="dot"></span> Actualización en vivo
+        </div>
+        <div class="stats-row reveal">
+            <div class="stat-item">
+                <h2 class="counter" data-target="23000">0</h2>
+                <p>Usuarios</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="counter" data-target="120000">0</h2>
+                <p>Interacciones</p>
+            </div>
+            <div class="stat-item">
+                <h2>5 min</h2>
+                <p>Tiempo promedio</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="counter" data-target="500">0</h2>
+                <p>Usuarios activos hoy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Cómo funciona -->
+    <section class="steps-section">
+        <h2 class="section-title reveal">Cómo funciona</h2>
+        <div class="steps-container">
+            <!-- Paso 1 -->
+            <div class="glass-card step-card reveal">
+                <div class="step-badge">1</div>
+                <div class="step-icon">
+                    <i class="fa-solid fa-user-pen"></i>
+                </div>
+                <h3>Ingresa tu usuario</h3>
+                <p>Escribe tu nombre de usuario de Roblox en el formulario principal.</p>
+            </div>
+
+            <div class="step-connector">
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="glass-card step-card reveal">
+                <div class="step-badge">2</div>
+                <div class="step-icon">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <h3>El sistema procesa</h3>
+                <p>Nuestros servidores analizan tu solicitud y preparan la conexión.</p>
+            </div>
+
+            <div class="step-connector">
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="glass-card step-card reveal">
+                <div class="step-badge">3</div>
+                <div class="step-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3>Se genera actividad</h3>
+                <p>Comienzas a recibir interacciones reales en tu cuenta.</p>
+            </div>
+
+            <div class="step-connector">
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="glass-card step-card reveal">
+                <div class="step-badge">4</div>
+                <div class="step-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3>Más visibilidad</h3>
+                <p>Más personas descubren tu perfil dentro de la plataforma.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Actividad Global (Mapa) -->
+    <section class="global-activity-section">
+        <h2 class="section-title reveal">Actividad Global</h2>
+        <div class="map-container reveal" id="world-map-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg" alt="World Map" class="world-map-img">
+        </div>
+    </section>
+
+    <!-- 6. FAQ (Simplificado para el ejemplo) -->
+    <section class="faq-section">
+        <h2 class="section-title reveal">Preguntas Frecuentes</h2>
+        <p class="section-subtitle reveal">Resolvemos las dudas más comunes de nuestra comunidad.</p>
+        
+        <div class="faq-container">
+            <!-- Pregunta 1 -->
+            <div class="glass-card faq-item reveal">
+                <div class="faq-question">
+                    <span><i class="fa-solid fa-bolt faq-icon"></i> ¿Cómo funciona la herramienta?</span>
+                    <i class="fa-solid fa-plus toggle-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Nuestro sistema conecta tu perfil público con nuestra red de usuarios para aumentar tu visibilidad de forma orgánica y segura.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="glass-card faq-item reveal">
+                <div class="faq-question">
+                    <span><i class="fa-solid fa-clock faq-icon"></i> ¿Cuánto tarda el proceso?</span>
+                    <i class="fa-solid fa-plus toggle-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Generalmente es instantáneo. Verás actividad en cuestión de segundos, aunque en horas pico puede tomar unos minutos.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="glass-card faq-item reveal">
+                <div class="faq-question">
+                    <span><i class="fa-solid fa-gift faq-icon"></i> ¿Es realmente gratis?</span>
+                    <i class="fa-solid fa-plus toggle-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, el servicio es 100% gratuito. Nos mantenemos gracias al apoyo de nuestra increíble comunidad.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="glass-card faq-item reveal">
+                <div class="faq-question">
+                    <span><i class="fa-solid fa-rotate faq-icon"></i> ¿Puedo usarlo varias veces?</span>
+                    <i class="fa-solid fa-plus toggle-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, puedes usar la herramienta una vez cada 24 horas para mantener un crecimiento constante en tu perfil.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="glass-card faq-item reveal">
+                <div class="faq-question">
+                    <span><i class="fa-solid fa-mobile-screen faq-icon"></i> ¿Funciona en móvil?</span>
+                    <i class="fa-solid fa-plus toggle-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Totalmente. Nuestra plataforma está optimizada para funcionar perfectamente en cualquier celular, tablet o PC.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 6 -->
+            <div class="glass-card faq-item reveal">
+                <div class="faq-question">
+                    <span><i class="fa-solid fa-user-shield faq-icon"></i> ¿Necesito registrarme?</span>
+                    <i class="fa-solid fa-plus toggle-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No. Nunca pedimos contraseñas ni registros complicados. Solo necesitamos tu nombre de usuario público.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="faq-footer-msg">
+            <p>¿No encontraste tu pregunta? <br> <span style="color: var(--accent-color);">Nuestro equipo siempre está listo para ayudarte.</span></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 — Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Contenedor de Notificaciones Flotantes -->
+    <div id="notification-container"></div>
+
+    <!-- Enlace a nuestro archivo de lógica JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
